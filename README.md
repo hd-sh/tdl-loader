@@ -1,4 +1,4 @@
-## 一个小小小...的Webpack custom Loader
+## 一个小小小...的Webpack custom Loader🤡
 
 ## 使用
 
@@ -19,6 +19,24 @@ xxx.tdl
   }
 </template>
 
+```
+### webpack.config.js
+
+``` js
+ rules: [
+    // ...other rules
+      {
+        test: /\.tdl$/,
+        use: [
+          {
+            loader: 'tdl-loader',
+            options: {
+              logger: false,
+            },
+          },
+        ],
+      },
+    ],
 ```
 
 ## 例子
