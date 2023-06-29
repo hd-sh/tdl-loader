@@ -1,3 +1,4 @@
+'use strict'
 module.exports = function tdlLoader(source) {
   const logger = this.query.logger || false
   source = source.replace(/\s+/g, '')
